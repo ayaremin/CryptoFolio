@@ -1,0 +1,134 @@
+<resources>
+  <string name="app_name">CryptoFolio</string>
+  <string name="facebook_app_id">302436203608267</string>
+  <string name="fb_login_protocol_scheme">fb302436203608267</string>
+  <string name="facebook_native_ad">302436203608267_309214696263751</string>
+  <string name="facebook_native_ad_ico">302436203608267_309312336253987</string>
+  <string name="app_id">ca-app-pub-1103854043360949~3956439037</string>
+  <string name="banner_id">ca-app-pub-1103854043360949/2464884659</string>
+  <string name="interstitial_id">ca-app-pub-1103854043360949/8825622335</string>
+  <string name="coin_added_id">ca-app-pub-1103854043360949/6020986280</string>
+  <string name="amount_changed_id">ca-app-pub-1103854043360949/2073291972</string>
+  <string name="detail_screen_id">ca-app-pub-1103854043360949/2118447440</string>
+
+  <string name="firebase_cloud_messaging_server_key">AAAAYmv54T0:APA91bFDjQiltBX2Y5w9V7kKnRr7K6QAbYt3u-xMHc_tTQBPk8nfv_ud_hixDvVN1-4LWCm2OBFFmvBxi95e3pVH2D_SNn8GmHUyddEt3jITbv9jXpCfKHYm0Juf8HGyofqxF7LUF_8h</string>
+  <string name="test_ad">ca-app-pub-3940256099942544/1033173712</string>
+  <string name="button_google">Google +</string>
+  <string name="button_facebook">Facebook</string>
+  <string name="content">Bugün liderlik rolüne geçin. Bir işletme sahibi veya serbest alana girmeyi düşünebilirsiniz. Bu, gücünüze sahip olmanızın ve finansal kabiliyetlerinizi almamanız için harika bir zaman.</string>
+  <string name="label_my_account">Hesap</string>
+  <string name="label_show_all">TÜMÜNÜ GÖSTER</string>
+  <string name="label_chatrooms">Chat Rooms</string>
+  <string name="label_ask_username">NickName</string>
+  <string name="label_search">Search</string>
+  <string name="label_join_chat">To join chat rooms, you need to enter a nickname for once</string>
+
+  <string name="placeholder_name">Emin Ayar</string>
+  <string name="placeholder_date">3 gün önce</string>
+
+  <string name="dialog_loading">Loading...</string>
+  <string name="dialog_title_error">An error occured</string>
+
+  <string name="label_chat">You can join chat rooms about currencies from here</string>
+
+  <string name="label_choose_coin">You can choose currency to add your portfolio from the
+    list below</string>
+  <string name="label_my_holdings">My Holdings</string>
+  <string name="label_change_currency">Change currency</string>
+  <string name="label_ok">OK</string>
+  <string name="label_no">Cancel</string>
+  <string name="label_delete">Remove!</string>
+  <string name="label_remove_ads">Remove Ads!</string>
+  <string name="label_remove_ads_detail">Do you want to get rid of all ads in app and support us a
+    little bit to make our app better by just <b>1.99$</b> ?
+  </string>
+  <string name="label_delete_detail">Are you sure to remove %1$s from your portfolio ?</string>
+  <string name="label_join">Join</string>
+  <string name="label_add">Add !</string>
+  <string name="label_total_holdings">Total : %1$s %2$s</string>
+  <string name="label_add_detail">Are you sure to add %1$s currency to your portfolio ?</string>
+  <string name="label_download">Download simplest crypto currency tracking and portfolio
+    app from Google Play Store https://play.google.com/store/apps/details?id=%1$s</string>
+
+  <string-array name="currencies">
+    <item>USD</item>
+    <item>EUR</item>
+    <item>TRY</item>
+    <item>AUD</item>
+    <item>BRL</item>
+    <item>CAD</item>
+    <item>CHF</item>
+    <item>CLP</item>
+    <item>CNY</item>
+    <item>CZK</item>
+    <item>DKK</item>
+    <item>GBP</item>
+    <item>HKD</item>
+    <item>HUF</item>
+    <item>IDR</item>
+    <item>ILS</item>
+    <item>INR</item>
+    <item>JPY</item>
+    <item>KRW</item>
+    <item>MXN</item>
+    <item>MYR</item>
+    <item>NOK</item>
+    <item>NZD</item>
+    <item>PHP</item>
+    <item>PKR</item>
+    <item>PLN</item>
+    <item>RUB</item>
+    <item>SEK</item>
+    <item>SGD</item>
+    <item>THB</item>
+    <item>TBD</item>
+    <item>ZAR</item>
+  </string-array>
+
+  <string-array name="chatrooms">
+    <item>Bitcoin</item>
+    <item>Ethereum</item>
+    <item>Bitcoin Cash</item>
+    <item>IOTA</item>
+    <item>Ripple</item>
+    <item>Litecoin</item>
+    <item>Dash</item>
+    <item>Bitcoin Gold</item>
+    <item>Monero</item>
+    <item>Cardano</item>
+    <item>Other Currencies</item>
+  </string-array>
+
+  <string name="label_coin_detail">Detail</string>
+  <string name="label_coin_detail_graph">Graph</string>
+  <string name="label_coin_detail_alarm">Alarms</string>
+  <string name="label_coin_list">COINS</string>
+  <string name="label_ico_list">ICO</string>
+  <string name="label_coin_detail_transactio">Transactions</string>
+  <string name="label_orders">Volume</string>
+  <string name="label_price_changes">Price</string>
+  <string name="label_alert_dialog_title">Set Alarm!</string>
+  <string name="label_great_than">≥ Great Than</string>
+  <string name="label_less_than">≤ Less Than</string>
+  <string name="label_set">SET ALARM</string>
+  <string name="error_empty">You can\'t leave both values empty</string>
+  <string name="label_price_notification_title">Price hits target for %1$s</string>
+  <string name="label_price_notification_desc">Price is now %1$s</string>
+  <string name="error_coin_already_exist">Already Exist</string>
+  <string name="error_coin_already_exist_detail">This coin is already exist in your
+    portfolio!</string>
+  <string name="menu_share">Share</string>
+  <string name="menu_rate_us">Rate Us</string>
+  <string name="menu_remove_ads">Remove ads</string>
+  <string name="menu_donate_us">Donate &amp; Support</string>
+  <string name="menu_portolio">Portfolio Overview</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="search">Search</string>
+
+  <string name="label_name_symbol">Name/Symbol</string>
+  <string name="label_holdings">Holdings</string>
+  <string name="label_price_btc_usd">Value</string>
+  <string name="message_no_coin">There is no coin in your portfolio, start adding portfolio
+  from list below</string>
+</resources>

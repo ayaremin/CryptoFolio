@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="10dp"
+    android:background="#ffffff"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/pair_name_text_view"
+      fontPath="fonts/Exo2-Bold.ttf"
+      android:textColor="@color/purple"
+      android:padding="3dp"
+      android:background="@drawable/purple_border"
+      android:visibility="gone"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/market_name_text_view"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      fontPath="fonts/Exo2-Bold.ttf"
+      android:textColor="@color/purple"
+      android:padding="3dp"
+      android:background="@drawable/purple_border"
+      android:visibility="gone"
+      />
+
+  <com.github.mikephil.charting.charts.CombinedChart
+      android:id="@+id/graph"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/pair_name_text_view"
+      />
+
+  <ProgressBar
+      android:id="@+id/progress_bar"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_centerInParent="true"
+      />
+
+</RelativeLayout>

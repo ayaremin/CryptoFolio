@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/RowStyle"
+    android:id="@+id/message_root_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:layout_toLeftOf="@+id/img_user_image"
+        android:layout_toRightOf="@+id/txt_time"
+        android:layout_toStartOf="@+id/img_user_image"
+        android:layout_toEndOf="@+id/txt_time"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Message text"
+            fontPath="fonts/Exo2-Medium.ttf"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="2dp"
+            android:autoLink="all"
+            android:background="@drawable/message_sent_2"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_sdk_image"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            fresco:roundedCornerRadius="10dp"
+            fresco:placeholderImage="@drawable/icn_200_image_message_placeholder"
+            fresco:failureImage="@drawable/icn_200_image_message_error"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/extra_layout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time"
+        android:id="@+id/txt_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        style="@style/MessageDateStyle"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="26dp"
+        android:id="@+id/read_receipt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_message_received"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_user_image"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/ic_profile"
+        fresco:roundAsCircle="true"
+        fresco:placeholderImage="@drawable/icn_100_profile"
+        fresco:failureImage="@drawable/icn_100_profile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:id="@+id/content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="8dp"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:paddingTop="8dp"
+      android:weightSum="9"
+      >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+      <TextView
+          android:id="@+id/name_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/gray"
+          android:textSize="16sp"
+          fontPath="fonts/Exo2-Light.ttf"
+          />
+
+      <TextView
+          android:id="@+id/symbol_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/name_text_view"
+          android:layout_marginTop="4dp"
+          android:textColor="@color/purple"
+          fontPath="fonts/Exo2-SemiBold.ttf"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:id="@+id/holding_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/gray"
+          android:textSize="14sp"
+          fontPath="fonts/Exo2-SemiBold.ttf"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:id="@+id/price_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/gray"
+          android:textSize="12sp"
+          fontPath="fonts/Exo2-SemiBold.ttf"
+          />
+
+      <TextView
+          android:id="@+id/btc_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4dp"
+          android:textSize="12sp"
+          fontPath="fonts/Exo2-SemiBold.ttf"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

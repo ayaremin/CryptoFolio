@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="me_color">#abcff4</color>
+    <color name="reply_color">#d7d4d3</color>
+    <color name="chat_bg">#e3e3e3</color>
+    <color name="chat_blue">#9C75F4</color>
+    <color name="logout">#ae2020</color>
+
+    <color name="white">#FCFDFD</color>
+    <color name="purple">#9C75F4</color>
+    <color name="light_purple">#dfdcec</color>
+    <color name="gray">#4a4849</color>
+    <color name="card_bg">#AEB7D5</color>
+</resources>

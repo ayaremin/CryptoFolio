@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:background="@color/white"
+      android:elevation="4dp"
+      >
+
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@null"
+        android:padding="4dp"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="@string/menu_portolio"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        fontPath="fonts/Exo2-Bold.ttf"
+        />
+
+    <ImageView
+        android:id="@+id/share_image_view"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/sharethis_logo"
+        android:visibility="gone"
+        />
+
+  </RelativeLayout>
+
+  <com.github.mikephil.charting.charts.PieChart
+      android:id="@+id/chart"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="vertical"
+      android:visibility="gone"
+      android:gravity="center"
+      android:background="@color/purple"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_my_holdings"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        fontPath="fonts/Exo2-Bold.ttf"
+        />
+
+    <TextView
+        android:id="@+id/usd_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        fontPath="fonts/Exo2-Regular.ttf"
+        />
+
+    <TextView
+        android:id="@+id/btc_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        fontPath="fonts/Exo2-Regular.ttf"
+        />
+
+
+  </LinearLayout>
+
+  <ListView
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/list_view"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingBottom="4dp"
+      android:paddingLeft="10dp"
+      android:visibility="gone"
+      android:paddingRight="10dp"
+      android:paddingTop="4dp"
+      android:weightSum="9"
+      >
+    <TextView
+        android:id="@+id/name_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/label_name_symbol"
+        fontPath="fonts/Exo2-SemiBold.ttf"
+        />
+
+    <TextView
+        android:id="@+id/holding_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/label_holdings"
+        fontPath="fonts/Exo2-SemiBold.ttf"
+        />
+
+    <TextView
+        android:id="@+id/value_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/label_price_btc_usd"
+        fontPath="fonts/Exo2-SemiBold.ttf"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>

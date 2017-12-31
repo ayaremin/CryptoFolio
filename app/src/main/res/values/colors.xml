@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#9C75F4</color>
+  <color name="darkerPurple">#6f39ea</color>
+  <color name="colorPrimaryDark">#9C75F4</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="white">#FCFDFD</color>
+  <color name="purple">#9C75F4</color>
+  <color name="light_purple">#dfdcec</color>
+  <color name="gray">#4a4849</color>
+  <color name="card_bg">#AEB7D5</color>
+</resources>

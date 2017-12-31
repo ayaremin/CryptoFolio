@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    parent="Theme.SdkTheme">
+
+
+    <color name="chat_sdk_shadow">#CC000000</color>
+
+    <color name="sdkPrimary">#9C75F4</color>
+    <color name="sdkOrange">#ea5a21</color>
+    <color name="sdkPrimaryDark">#9C75F4</color>
+    <color name="sdkAccent">#9C75F4</color>
+    <color name="sdkTextColorPrimary">@android:color/white</color>
+    <color name="sdkWindowBackground">@android:color/background_light</color>
+    <color name="sdkNavigationBarColor">@android:color/darker_gray</color>
+
+
+    <color name="background_tab_pressed">#9C75F4</color>
+
+    <color name="sdkToastColor">#9C75F4</color>
+    <color name="sdkToastTextColor">@android:color/white</color>
+    <color name="sdkAlertToastColor">@android:color/holo_red_light</color>
+    <color name="sdkAlertToastTextColor">@android:color/white</color>
+</resources>

@@ -1,0 +1,116 @@
+buildscript {
+  repositories {
+    maven { url 'https://maven.fabric.io/public' }
+  }
+
+  dependencies {
+    classpath 'io.fabric.tools:gradle:1.+'
+  }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+repositories {
+  maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "26.0.2"
+  defaultConfig {
+    applicationId "com.happycoderz.cryptofolio"
+    minSdkVersion 16
+    multiDexEnabled = true
+    targetSdkVersion 25
+    versionCode 12
+    versionName "0.0.2.1"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    buildConfigField "String", "BASE_URL", "\"https://api.coinmarketcap.com/v1/\""
+    buildConfigField "String", "GRAPH_BASE_URL",
+        "\"https://cryptocoincharts.info/fast/2f_period" + ".php/\"";
+    buildConfigField "String", "ICO_BASE_URL", "\"https://api.icowatchlist.com/public/v1/\""
+  }
+  lintOptions {
+    checkReleaseBuilds false
+    abortOnError false
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+    debug {
+      versionNameSuffix "-DEBUG"
+    }
+  }
+}
+
+configurations.all {
+  resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+    def requested = details.requested
+    if (requested.group == 'com.android.support') {
+      if (!requested.name.startsWith("multidex")) {
+        details.useVersion '25.3.1'
+      }
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+    transitive = true;
+  }
+  compile('com.crashlytics.sdk.android:answers:1.4.1@aar') {
+    transitive = true;
+  }
+  compile project(':chat-sdk-ui')
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  compile 'com.android.support:appcompat-v7:25.3.1'
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  compile 'com.android.support:multidex:1.0.1'
+  compile 'com.arello-mobile:moxy:1.5.3'
+  compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+  compile 'com.arello-mobile:moxy-app-compat:1.5.3'
+  compile 'com.jakewharton:butterknife:8.8.1'
+  compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+  compile 'io.reactivex.rxjava2:rxjava:2.1.5'
+  compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+  compile 'com.squareup.retrofit2:retrofit:2.0.2'
+  compile 'com.squareup.okhttp3:okhttp:3.2.0'
+  compile 'com.squareup.okio:okio:1.7.0'
+  compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+  compile 'com.google.code.gson:gson:2.8.2'
+  compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+  compile 'com.afollestad.material-dialogs:core:0.9.4.3'
+  compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+  compile 'gun0912.ted:tedpermission-rx2:2.0.3'
+  compile 'com.github.arimorty:floatingsearchview:2.1.1'
+  compile 'com.pnikosis:materialish-progress:1.7'
+  compile 'org.solovyev.android:checkout:1.2.1'
+  compile 'co.chatsdk.chatsdk:chat-sdk-core:4.0.6'
+  compile 'com.shehabic.droppy:Droppy:0.6.0@aar'
+  compile 'de.hdodenhof:circleimageview:2.2.0'
+  compile 'co.chatsdk.chatsdk:chat-sdk-firebase-adapter:4.0.6'
+  compile 'co.chatsdk.chatsdk:chat-sdk-firebase-file-storage:4.0.6'
+  compile 'co.chatsdk.chatsdk:chat-sdk-firebase-push:4.0.6'
+  compile 'com.github.hotchemi:android-rate:1.0.1'
+  compile 'com.google.firebase:firebase-ads:10.0.1'
+  compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+  compile 'com.android.support:support-v4:25.3.1'
+  compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+  compile 'com.evernote:android-job:1.1.8'
+  compile 'io.realm:android-adapters:2.1.1'
+  compile 'com.android.support:support-core-ui:25.3.1'
+  compile 'com.duolingo.open:rtl-viewpager:1.0.2'
+  compile 'com.facebook.android:audience-network-sdk:4.+'
+  compile 'com.squareup.picasso:picasso:2.5.2'
+  compile 'com.yalantis:contextmenu:1.0.7'
+  testCompile 'junit:junit:4.12'
+  annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

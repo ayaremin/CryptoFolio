@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.happycoderz.cryptfolio.dashboard.DashboardActivity"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:background="@color/white"
+      android:elevation="4dp"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/app_name"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        fontPath="fonts/Exo2-Bold.ttf"
+        />
+
+    <ImageView
+        android:id="@+id/menu_image_view"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/menu"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ad_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/menu_image_view"
+        android:layout_toLeftOf="@+id/chat_image_view"
+        android:layout_toStartOf="@+id/chat_image_view"
+        android:visibility="gone"
+        >
+
+      <ImageView
+          android:id="@+id/ad_image_view"
+          android:layout_width="26dp"
+          android:layout_height="26dp"
+          android:layout_alignParentBottom="true"
+          android:src="@drawable/ic_magic_hat"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/ad_image_view"
+          android:layout_alignEnd="@+id/ad_image_view"
+          android:layout_alignRight="@+id/ad_image_view"
+          android:text="AD"
+          android:textColor="@color/purple"
+          android:textSize="8sp"
+          />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/chat_image_view"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/menu_image_view"
+        android:layout_toStartOf="@+id/menu_image_view"
+        android:src="@drawable/chat"
+        />
+
+
+  </RelativeLayout>
+
+
+  <RelativeLayout
+      android:id="@+id/my_holdings_container_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/light_purple"
+      android:elevation="2dp"
+      >
+
+    <RelativeLayout
+        android:id="@+id/portfolio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/portfolio_recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="140dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_below="@+id/portfolio_recycler_view"
+          android:gravity="center_vertical"
+          >
+
+        <TextView
+            android:id="@+id/total_holdings_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            fontPath="fonts/Exo2-Bold.ttf"
+            />
+
+        <Button
+            android:id="@+id/currency_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/expand_image_view"
+            android:layout_toStartOf="@+id/expand_image_view"
+            android:background="@drawable/purple_rounded"
+            android:drawableEnd="@drawable/ic_select_currency"
+            android:drawableRight="@drawable/ic_select_currency"
+            android:gravity="center"
+            android:paddingEnd="2dp"
+            android:paddingRight="2dp"
+            android:text="USD"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            fontPath="fonts/Exo2-SemiBold.ttf"
+            />
+
+        <ImageView
+            android:id="@+id/expand_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_expand"
+            />
+
+      </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/empty_place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        >
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="12dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/label_chat"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            fontPath="fonts/Exo2-Light.ttf"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="62dp"
+            android:rotation="270"
+            android:scaleY="-1"
+            android:src="@drawable/arrow_up"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="12dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginStart="16dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:rotation="90"
+            android:scaleY="-1"
+            android:src="@drawable/arrow_up"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/label_choose_coin"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            fontPath="fonts/Exo2-Light.ttf"
+            />
+
+      </LinearLayout>
+
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+  <android.support.design.widget.TabLayout
+      android:id="@+id/tabs"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="@color/purple"
+      app:tabIndicatorColor="@color/darkerPurple"
+      app:tabIndicatorHeight="2dp"
+      app:tabSelectedTextColor="@color/white"
+      app:tabTextColor="@color/white"
+      fontPath="fonts/Exo2-Thin.ttf"
+      />
+
+  <com.duolingo.open.rtlviewpager.RtlViewPager
+      android:id="@+id/pager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+</LinearLayout>

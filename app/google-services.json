@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "422718333245",
+    "firebase_url": "https://cryptfolio-a62c6.firebaseio.com",
+    "project_id": "cryptfolio-a62c6",
+    "storage_bucket": "cryptfolio-a62c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422718333245:android:a068e1c17b0198f8",
+        "android_client_info": {
+          "package_name": "com.happycoderz.cryptofolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422718333245-j9k9tp9tatg7356v3a8tr7t5qpetd3at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happycoderz.cryptofolio",
+            "certificate_hash": "eb4bd55b3129b1be395d498b3c5c5d80a3d1986b"
+          }
+        },
+        {
+          "client_id": "422718333245-k9gi6ch2afogaf0nuqtcltsboiqpb1ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5lz04hfIk-P8DgGttr-0au03YOSiDbng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422718333245-k9gi6ch2afogaf0nuqtcltsboiqpb1ja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

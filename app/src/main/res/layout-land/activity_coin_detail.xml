@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:background="@color/white"
+      android:elevation="4dp"
+      >
+
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@null"
+        android:padding="4dp"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="@string/label_coin_detail"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        fontPath="fonts/Exo2-Bold.ttf"
+        />
+
+    <ImageView
+        android:id="@+id/share_image_view"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/sharethis_logo"
+        android:visibility="gone"
+        />
+
+  </RelativeLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+          <ImageView
+              android:id="@+id/coin_image_view"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:layout_marginTop="10dp"
+              />
+
+          <TextView
+              android:id="@+id/name_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/gray"
+              android:textSize="16sp"
+              fontPath="fonts/Exo2-Bold.ttf"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:orientation="horizontal"
+              >
+
+            <TextView
+                android:id="@+id/price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                fontPath="fonts/Exo2-SemiBold.ttf"
+                />
+
+            <TextView
+                android:id="@+id/percentage_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                fontPath="fonts/Exo2-Bold.ttf"
+                />
+
+          </LinearLayout>
+
+          <TextView
+              android:id="@+id/market_cap_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/gray"
+              android:textSize="16sp"
+              fontPath="fonts/Exo2-Bold.ttf"
+              />
+
+        </LinearLayout>
+
+      </RelativeLayout>
+
+      <android.support.design.widget.TabLayout
+          android:id="@+id/tabs"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/purple"
+          app:tabTextColor="@color/white"
+          app:tabSelectedTextColor="@color/white"
+          android:visibility="gone"
+          app:tabIndicatorHeight="2dp"
+          app:tabIndicatorColor="@color/darkerPurple"
+          fontPath="fonts/Exo2-Thin.ttf"
+          />
+
+      <com.duolingo.open.rtlviewpager.RtlViewPager
+          android:id="@+id/pager"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          />
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

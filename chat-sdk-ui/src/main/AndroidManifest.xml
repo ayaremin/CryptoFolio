@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.chatsdk.ui">
+
+    <!--For capturing photos in profile and chat UI-->
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="co.chatsdk.ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SdkTheme">
+        </activity>
+
+        <activity android:name="co.chatsdk.ui.threads.ThreadDetailsActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/ChatSDKSlidingTransactionTheme"/>
+
+        <activity android:name="co.chatsdk.ui.chat.ChatActivity"
+            android:launchMode = "singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/ChatSDKSlidingTransactionTheme"/>
+
+        <activity android:name="co.chatsdk.ui.profile.EditProfileActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/SdkTheme"/>
+
+        <activity android:name="co.chatsdk.ui.profile.ProfileActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/SdkTheme"/>
+
+        <activity android:name="co.chatsdk.ui.main.MainActivity"
+            android:launchMode = "singleTask"
+            android:theme="@style/SdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity android:name="co.chatsdk.ui.contacts.SelectContactActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/ChatSDKSlidingTransactionTheme"/>
+
+        <activity android:name="co.chatsdk.ui.search.SearchActivity"
+            android:theme="@style/SdkTheme">
+        </activity>
+
+        <!--Crop image-->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <!-- Google Maps Metadata-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+</manifest>

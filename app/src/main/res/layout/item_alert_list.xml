@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+  <ImageView
+      android:id="@+id/bell"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:src="@drawable/ic_bell"
+      />
+
+  <TextView
+      android:id="@+id/condition_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_toRightOf="@+id/bell"
+      android:layout_toEndOf="@+id/bell"
+      android:textColor="@color/gray"
+      android:textSize="16sp"
+      fontPath="fonts/Exo2-Bold.ttf"
+      />
+
+  <ImageView
+      android:id="@+id/delete_image_view"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:padding="2dp"
+      android:src="@drawable/ic_delete"
+      />
+
+</RelativeLayout>

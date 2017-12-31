@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:id="@+id/ad_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:visibility="gone"
+      ></LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:padding="8dp"
+      >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+
+        >
+
+      <TextView
+          android:id="@+id/name_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/purple"
+          android:textSize="16sp"
+          fontPath="fonts/Exo2-Bold.ttf"
+          />
+
+      <TextView
+          android:id="@+id/desc_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/name_text_view"
+          android:layout_marginTop="4dp"
+          android:textColor="@color/gray"
+          fontPath="fonts/Exo2-SemiBold.ttf"
+          />
+
+      <TextView
+          android:id="@+id/start_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4dp"
+          android:maxLines="1"
+          android:textColor="@color/gray"
+          android:textSize="12sp"
+          fontPath="fonts/Exo2-Light.ttf"
+          />
+
+      <TextView
+          android:id="@+id/end_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4dp"
+          android:textColor="@color/gray"
+          android:textSize="12sp"
+          fontPath="fonts/Exo2-Light.ttf"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<resources>
+  <string name="app_name">CryptoFolio</string>
+
+  <string name="app_id">ca-app-pub-1103854043360949~3956439037</string>
+  <string name="banner_id">ca-app-pub-1103854043360949/2464884659</string>
+  <string name="interstitial_id">ca-app-pub-1103854043360949/8825622335</string>
+  <string name="coin_added_id">ca-app-pub-1103854043360949/6020986280</string>
+  <string name="amount_changed_id">ca-app-pub-1103854043360949/2073291972</string>
+
+  <string name="test_ad">ca-app-pub-3940256099942544/1033173712</string>
+  <string name="button_google">Google +</string>
+  <string name="button_facebook">Facebook</string>
+  <string name="content">Bugün liderlik rolüne geçin. Bir işletme sahibi veya serbest alana girmeyi düşünebilirsiniz. Bu, gücünüze sahip olmanızın ve finansal kabiliyetlerinizi almamanız için harika bir zaman.</string>
+  <string name="label_my_account">Hesap</string>
+  <string name="label_show_all">TÜMÜNÜ GÖSTER</string>
+  <string name="label_chatrooms">Chat Odaları</string>
+  <string name="label_ask_username">Kullanıcı Adı</string>
+  <string name="label_join_chat">Chat odalarına katılabilmek için bir defaya mahsus bir
+    kullanıcı adı belirlemelisiniz</string>
+
+  <string name="placeholder_name">Emin Ayar</string>
+  <string name="placeholder_date">3 gün önce</string>
+
+  <string name="dialog_loading">Yükleniyor...</string>
+  <string name="dialog_title_error">Hata oluştu</string>
+
+  <string name="label_chat">Para birimleri ile ilgili chat odalarına burdan
+    katılabilirsiniz</string>
+
+  <string name="label_choose_coin">Portfolyonuza aşağıdaki listeden seçerek para birimi
+    ekleyebilirsiniz</string>
+  <string name="label_my_holdings">Varlıklarım</string>
+  <string name="label_change_currency">Para birimi değiştir</string>
+  <string name="label_ok">Tamam</string>
+  <string name="label_no">Vazgeç</string>
+  <string name="label_delete">Kaldır!</string>
+  <string name="label_remove_ads">Reklamları Kaldır!</string>
+  <string name="label_remove_ads_detail">Tüm reklamlardan kurtulmak ve bize küçük bir
+    destekte bulunmak istermisiniz ? <b>1.99$</b> fiyatla uygulamanın daha da geliştirilmesine
+    katkıda
+    bulunabilir ve reklamlardan kurtulabilirsiniz.
+  </string>
+  <string name="label_delete_detail">%1$s para birimini portföyünüzden kaldırmak
+    istediğinize emin misiniz ?</string>
+  <string name="label_join">Katıl</string>
+  <string name="label_add">Ekle !</string>
+  <string name="label_total_holdings">Toplam : %1$s %2$s</string>
+  <string name="label_add_detail">%1$s para birimini portföyünüze eklemek
+    istediğinize emin misiniz ?</string>
+  <string name="label_download">Download simplest crypto currency tracking and portfolio
+    app from Google Play Store https://play.google.com/store/apps/details?id=%1$s</string>
+  <string name="label_search">Ara</string>
+  <string name="search">Ara</string>
+
+  <string-array name="currencies">
+    <item>USD</item>
+    <item>EUR</item>
+    <item>TRY</item>
+    <item>AUD</item>
+    <item>BRL</item>
+    <item>CAD</item>
+    <item>CHF</item>
+    <item>CLP</item>
+    <item>CNY</item>
+    <item>CZK</item>
+    <item>DKK</item>
+    <item>GBP</item>
+    <item>HKD</item>
+    <item>HUF</item>
+    <item>IDR</item>
+    <item>ILS</item>
+    <item>INR</item>
+    <item>JPY</item>
+    <item>KRW</item>
+    <item>MXN</item>
+    <item>MYR</item>
+    <item>NOK</item>
+    <item>NZD</item>
+    <item>PHP</item>
+    <item>PKR</item>
+    <item>PLN</item>
+    <item>RUB</item>
+    <item>SEK</item>
+    <item>SGD</item>
+    <item>THB</item>
+    <item>TBD</item>
+    <item>ZAR</item>
+  </string-array>
+
+  <string-array name="chatrooms">
+    <item>Bitcoin</item>
+    <item>Ethereum</item>
+    <item>Bitcoin Cash</item>
+    <item>IOTA</item>
+    <item>Ripple</item>
+    <item>Litecoin</item>
+    <item>Dash</item>
+    <item>Bitcoin Gold</item>
+    <item>Monero</item>
+    <item>Cardano</item>
+    <item>Other Currencies</item>
+  </string-array>
+
+  <string name="label_coin_detail">Detay</string>
+  <string name="label_coin_detail_graph">Grafik</string>
+  <string name="label_coin_detail_alarm">Alarmlar</string>
+  <string name="label_coin_detail_transactio">İşlemler</string>
+  <string name="label_orders">Hacim</string>
+  <string name="label_price_changes">Fiyat</string>
+  <string name="label_alert_dialog_title">Alarm Kur!</string>
+  <string name="label_great_than">≥ Büyük olduğunda</string>
+  <string name="label_less_than">≤ Küçük olduğunda</string>
+  <string name="label_set">ALARM KUR</string>
+  <string name="error_empty">En az bir değeri doldurmalısınız</string>
+  <string name="label_price_notification_title">Fiyat alarmı : %1$s</string>
+  <string name="label_price_notification_desc">Fiyat %1$s</string>
+  <string name="error_coin_already_exist">Zaten Mevcut</string>
+  <string name="error_coin_already_exist_detail">Bu coin zaten portfolyonuzda mevcut</string>
+  <string name="menu_share">Paylaş</string>
+  <string name="menu_rate_us">Bizi Oyla</string>
+  <string name="menu_remove_ads">Reklamları Kaldır</string>
+  <string name="menu_donate_us">Bağışta Bulun</string>
+  <string name="label_holdings">Varlıklarım</string>
+  <string name="label_name_symbol">Ad/Sembol</string>
+  <string name="label_price_btc_usd">Değer</string>
+  <string name="menu_portolio">Portföy</string>
+  <string name="message_no_coin">Portföyünüze ekli bir coin henüz yok, aşağıdaki listeden seçerek portföyünüze coin ekleyebilirsiniz</string>
+</resources>
