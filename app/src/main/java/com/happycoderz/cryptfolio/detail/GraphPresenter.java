@@ -41,13 +41,14 @@ import java.util.ArrayList;
     getViewState().setViews();
   }
 
-  int mIndex = 0;
-  int cIndex = 0;
-  public void getGraph(final String pair, final int marketIndex, final int coinIndex) {
+  public int mIndex = 0;
+  public int cIndex = 0;
+  public void getGraph(final String pair, final int marketIndex, final int coinIndex, final String
+      time, final String res) {
     final String[] markets = { "bitfinex", "bitstamp", "coinone", "coinbase", "liqui", "poloniex" };
     final String[] converts = { "usd", "btc" };
     retrofitGraphApi.create(RestService.class)
-        .getGraphForCurrency(pair+ "-"+converts[cIndex], markets[mIndex])
+        .getGraphForCurrency(pair+ "-"+converts[cIndex], markets[mIndex], time, res)
         .subscribeOn(Schedulers.io())
         .observeOn(AndroidSchedulers.mainThread())
         .unsubscribeOn(Schedulers.io())
@@ -67,11 +68,11 @@ import java.util.ArrayList;
                 .length - 1) {
               cIndex++;
               mIndex = 0;
-              getGraph(pair, mIndex, cIndex);
+              getGraph(pair, mIndex, cIndex, time, res);
               return;
             }
             else if (coins.isEmpty()){
-              getGraph(pair, mIndex++, cIndex);
+              getGraph(pair, mIndex++, cIndex, time, res);
               return;
             }
             getViewState().hideProgress();

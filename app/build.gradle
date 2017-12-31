@@ -29,7 +29,7 @@ android {
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     buildConfigField "String", "BASE_URL", "\"https://api.coinmarketcap.com/v1/\""
     buildConfigField "String", "GRAPH_BASE_URL",
-        "\"https://cryptocoincharts.info/fast/2f_period" + ".php/\"";
+        "\"https://cryptocoincharts.info/fast/\"";
     buildConfigField "String", "ICO_BASE_URL", "\"https://api.icowatchlist.com/public/v1/\""
   }
   lintOptions {
@@ -107,6 +107,7 @@ dependencies {
   compile 'com.duolingo.open:rtl-viewpager:1.0.2'
   compile 'com.facebook.android:audience-network-sdk:4.+'
   compile 'com.squareup.picasso:picasso:2.5.2'
+  compile 'info.hoang8f:android-segmented:1.0.6'
   compile 'com.yalantis:contextmenu:1.0.7'
   testCompile 'junit:junit:4.12'
   annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3'

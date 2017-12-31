@@ -20,8 +20,9 @@ public interface RestService {
       @Query("convert") String currency
   );
 
-  @GET("?time=3d&resolution=1h") Observable<ArrayList<ArrayList<Object>>> getGraphForCurrency(
-      @Query("pair") String symbol, @Query("market") String market
+  @GET("2f_period.php") Observable<ArrayList<ArrayList<Object>>> getGraphForCurrency(
+      @Query("pair") String symbol, @Query("market") String market, @Query("time") String time,
+      @Query("resolution") String res
   );
 }
 

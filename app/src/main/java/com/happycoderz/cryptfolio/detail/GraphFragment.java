@@ -2,11 +2,13 @@ package com.happycoderz.cryptfolio.detail;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +30,7 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.happycoderz.cryptfolio.BaseFragment;
 import com.happycoderz.cryptfolio.R;
+import info.hoang8f.android.segmented.SegmentedGroup;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -53,6 +56,7 @@ public class GraphFragment extends BaseFragment implements GraphView {
   @BindView(R.id.progress_bar) protected ProgressBar progressBar;
   @BindView(R.id.pair_name_text_view) protected TextView pairNameTextView;
   @BindView(R.id.market_name_text_view) protected TextView marketNameTextView;
+  @BindView(R.id.segmented) protected SegmentedGroup timeRangeGroup;
 
   @Nullable @Override public View onCreateView(
       LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState
@@ -67,7 +71,42 @@ public class GraphFragment extends BaseFragment implements GraphView {
   @Override public void setViews() {
     super.setViews();
     symbol = ((CoinDetailActivity) getActivity()).getCurrency();
-    presenter.getGraph(symbol, 0, 0);
+    presenter.getGraph(symbol, 0, 0, "3d", "1h");
+    timeRangeGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+      @Override public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+        presenter.cIndex = 0;
+        presenter.mIndex = 0;
+        switch (checkedId) {
+          case R.id.one_year:
+            presenter.getGraph(symbol, 0, 0, "1y", "6d");
+            break;
+
+          case R.id.six_month:
+            presenter.getGraph(symbol, 0, 0, "6m", "3d");
+            break;
+
+          case R.id.three_month:
+            presenter.getGraph(symbol, 0, 0, "3m", "1d");
+            break;
+
+          case R.id.one_month:
+            presenter.getGraph(symbol, 0, 0, "1m", "4h");
+            break;
+
+          case R.id.one_week:
+            presenter.getGraph(symbol, 0, 0, "7d", "2h");
+            break;
+
+          case R.id.three_day:
+            presenter.getGraph(symbol, 0, 0, "3d", "1h");
+            break;
+
+          case R.id.one_day:
+            presenter.getGraph(symbol, 0, 0, "1d", "1h");
+            break;
+        }
+      }
+    });
   }
 
   @Override public void hideProgress() {
@@ -86,6 +125,7 @@ public class GraphFragment extends BaseFragment implements GraphView {
       ArrayList<ArrayList<Object>> coins, String market, String conversion
   ) {
 
+    mChart.invalidate();
     pairNameTextView.setVisibility(View.VISIBLE);
     marketNameTextView.setVisibility(View.VISIBLE);
     pairNameTextView.setText(symbol + '-' + conversion.toUpperCase());
