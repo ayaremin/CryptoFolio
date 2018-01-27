@@ -5,11 +5,11 @@
   <string name="facebook_native_ad">302436203608267_309214696263751</string>
   <string name="facebook_native_ad_ico">302436203608267_309312336253987</string>
   <string name="app_id">ca-app-pub-1347034666805046~2979197389</string>
-  <string name="banner_id">ca-app-pub-1103854043360949/2464884659</string>
-  <string name="interstitial_id">ca-app-pub-1103854043360949/8825622335</string>
-  <string name="coin_added_id">ca-app-pub-1103854043360949/6020986280</string>
-  <string name="amount_changed_id">ca-app-pub-1103854043360949/2073291972</string>
-  <string name="detail_screen_id">ca-app-pub-1103854043360949/2118447440</string>
+  <string name="banner_id">ca-app-pub-1347034666805046/3198689234</string>
+  <string name="interstitial_id">ca-app-pub-1347034666805046/3198689234</string>
+  <string name="coin_added_id">ca-app-pub-1347034666805046/3198689234</string>
+  <string name="amount_changed_id">ca-app-pub-1347034666805046/3198689234</string>
+  <string name="detail_screen_id">ca-app-pub-1347034666805046/3198689234</string>
 
   <string name="firebase_cloud_messaging_server_key">AAAAYmv54T0:APA91bFDjQiltBX2Y5w9V7kKnRr7K6QAbYt3u-xMHc_tTQBPk8nfv_ud_hixDvVN1-4LWCm2OBFFmvBxi95e3pVH2D_SNn8GmHUyddEt3jITbv9jXpCfKHYm0Juf8HGyofqxF7LUF_8h</string>
   <string name="test_ad">ca-app-pub-3940256099942544/1033173712</string>
