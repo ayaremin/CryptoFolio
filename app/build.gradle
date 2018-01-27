@@ -24,8 +24,8 @@ android {
     minSdkVersion 16
     multiDexEnabled = true
     targetSdkVersion 25
-    versionCode 12
-    versionName "0.0.2.1"
+    versionCode 15
+    versionName "0.0.3.0"
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     buildConfigField "String", "BASE_URL", "\"https://api.coinmarketcap.com/v1/\""
     buildConfigField "String", "GRAPH_BASE_URL",
@@ -98,16 +98,19 @@ dependencies {
   compile 'co.chatsdk.chatsdk:chat-sdk-firebase-push:4.0.6'
   compile 'com.github.hotchemi:android-rate:1.0.1'
   compile 'com.google.firebase:firebase-ads:10.0.1'
+  compile 'com.github.florent37:materialtextfield:1.0.7'
   compile 'com.facebook.android:facebook-android-sdk:[4,5)'
   compile 'com.android.support:support-v4:25.3.1'
   compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
   compile 'com.evernote:android-job:1.1.8'
+  compile 'us.belka:androidtoggleswitch:1.2.2'
   compile 'io.realm:android-adapters:2.1.1'
   compile 'com.android.support:support-core-ui:25.3.1'
   compile 'com.duolingo.open:rtl-viewpager:1.0.2'
   compile 'com.facebook.android:audience-network-sdk:4.+'
   compile 'com.squareup.picasso:picasso:2.5.2'
   compile 'info.hoang8f:android-segmented:1.0.6'
+  compile 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
   compile 'com.yalantis:contextmenu:1.0.7'
   testCompile 'junit:junit:4.12'
   annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3'

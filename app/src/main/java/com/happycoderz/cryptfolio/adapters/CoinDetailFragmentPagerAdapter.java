@@ -36,7 +36,7 @@ public class CoinDetailFragmentPagerAdapter extends FragmentPagerAdapter {
   }
 
   @Override public int getCount() {
-    return 2;
+    return 3;
   }
 
   @Override public CharSequence getPageTitle(int position) {

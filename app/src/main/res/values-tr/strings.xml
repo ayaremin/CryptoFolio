@@ -1,13 +1,6 @@
 <resources>
   <string name="app_name">CryptoFolio</string>
 
-  <string name="app_id">ca-app-pub-1103854043360949~3956439037</string>
-  <string name="banner_id">ca-app-pub-1103854043360949/2464884659</string>
-  <string name="interstitial_id">ca-app-pub-1103854043360949/8825622335</string>
-  <string name="coin_added_id">ca-app-pub-1103854043360949/6020986280</string>
-  <string name="amount_changed_id">ca-app-pub-1103854043360949/2073291972</string>
-
-  <string name="test_ad">ca-app-pub-3940256099942544/1033173712</string>
   <string name="button_google">Google +</string>
   <string name="button_facebook">Facebook</string>
   <string name="content">Bugün liderlik rolüne geçin. Bir işletme sahibi veya serbest alana girmeyi düşünebilirsiniz. Bu, gücünüze sahip olmanızın ve finansal kabiliyetlerinizi almamanız için harika bir zaman.</string>
@@ -125,4 +118,14 @@
   <string name="label_price_btc_usd">Değer</string>
   <string name="menu_portolio">Portföy</string>
   <string name="message_no_coin">Portföyünüze ekli bir coin henüz yok, aşağıdaki listeden seçerek portföyünüze coin ekleyebilirsiniz</string>
+
+  <string name="label_add_transaction">Yeni İşlem Ekle</string>
+  <string name="label_trading_pair">İşlem Çifti</string>
+  <string name="label_transaction_price">İşlem Fiyatı</string>
+  <string name="label_amount_buy">Alınan Miktar</string>
+  <string name="label_worth">Toplam Değer</string>
+  <string name="sell">Satış</string>
+  <string name="buy">Alış</string>
+  <string name="buy_price">Alış/Satış Fiyatı</string>
+  <string name="confirm">ONAYLA</string>
 </resources>

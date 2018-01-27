@@ -11,8 +11,14 @@ public class RealmMigrations implements RealmMigration {
     public void migrate(DynamicRealm realm, long oldVersion, long newVersion) {
         final RealmSchema schema = realm.getSchema();
 
-        if (oldVersion < 12) {
+        if (oldVersion == 1) {
             schema.create("Coin");
+            oldVersion ++;
+        }
+
+        if (oldVersion == 2) {
+            schema.create("Transaction");
+            oldVersion++;
         }
     }
 }

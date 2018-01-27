@@ -2,113 +2,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="15dp"
     android:paddingLeft="15dp"
     android:paddingRight="15dp"
-    android:paddingBottom="15dp"
     android:paddingTop="10dp"
-    android:background="#ffffff"
     >
 
   <TextView
+      android:id="@+id/pair_name_text_view"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:id="@+id/pair_name_text_view"
-      fontPath="fonts/Exo2-Bold.ttf"
-      android:textColor="@color/purple"
-      android:padding="3dp"
       android:background="@drawable/purple_border"
+      android:padding="3dp"
+      android:textColor="@color/purple"
       android:visibility="gone"
+      fontPath="fonts/Exo2-Bold.ttf"
       />
 
   <TextView
+      android:id="@+id/market_name_text_view"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:id="@+id/market_name_text_view"
-      android:layout_alignParentRight="true"
       android:layout_alignParentEnd="true"
-      fontPath="fonts/Exo2-Bold.ttf"
-      android:textColor="@color/purple"
-      android:padding="3dp"
+      android:layout_alignParentRight="true"
       android:background="@drawable/purple_border"
+      android:padding="3dp"
+      android:textColor="@color/purple"
       android:visibility="gone"
+      fontPath="fonts/Exo2-Bold.ttf"
       />
 
-  <info.hoang8f.android.segmented.SegmentedGroup
-      xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+  <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
       android:id="@+id/segmented"
       android:layout_width="match_parent"
       android:layout_height="20dp"
-      android:layout_marginTop="10dp"
       android:layout_below="@+id/pair_name_text_view"
+      android:layout_marginTop="10dp"
       android:orientation="horizontal"
       android:weightSum="7"
       segmentedgroup:sc_border_width="1dp"
       segmentedgroup:sc_corner_radius="0dp"
-      segmentedgroup:sc_tint_color="@color/purple">
+      segmentedgroup:sc_tint_color="@color/purple"
+      >
 
     <RadioButton
         android:id="@+id/one_year"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="1Y"
-        style="@style/RadioButton" />
+        style="@style/RadioButton"
+        />
 
     <RadioButton
         android:id="@+id/six_month"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="6M"
-        style="@style/RadioButton" />
+        style="@style/RadioButton"
+        />
 
     <RadioButton
         android:id="@+id/three_month"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="3M"
-        style="@style/RadioButton" />
+        style="@style/RadioButton"
+        />
 
     <RadioButton
         android:id="@+id/one_month"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="1M"
-        style="@style/RadioButton" />
+        style="@style/RadioButton"
+        />
 
     <RadioButton
         android:id="@+id/one_week"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="1W"
-        style="@style/RadioButton" />
+        style="@style/RadioButton"
+        />
 
     <RadioButton
         android:id="@+id/three_day"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="3D"
+        android:layout_weight="1"
         android:checked="true"
-        style="@style/RadioButton" />
+        android:text="3D"
+        style="@style/RadioButton"
+        />
 
     <RadioButton
         android:id="@+id/one_day"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="1D"
-        style="@style/RadioButton" />
+        style="@style/RadioButton"
+        />
   </info.hoang8f.android.segmented.SegmentedGroup>
 
   <com.github.mikephil.charting.charts.CombinedChart
       android:id="@+id/graph"
       android:layout_width="match_parent"
-      android:layout_below="@+id/segmented"
       android:layout_height="match_parent"
+      android:layout_below="@+id/segmented"
       />
 
   <ProgressBar

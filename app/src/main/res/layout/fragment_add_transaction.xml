@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#88000000"
+      ></FrameLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:background="@color/purple"
+      android:id="@+id/toolbar"
+      android:elevation="4dp"
+      >
+
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@null"
+        android:padding="4dp"
+        android:tint="@color/white"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="@string/label_add_transaction"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        fontPath="fonts/Exo2-Bold.ttf"
+        />
+
+    <ImageView
+        android:id="@+id/share_image_view"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/sharethis_logo"
+        android:visibility="gone"
+        />
+
+  </RelativeLayout>
+
+  <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+      android:id="@+id/type_toggle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      custom:textToggleRight="@string/sell"
+      android:layout_below="@+id/toolbar"
+      android:gravity="center"
+      custom:toggleWidth="140dp"
+      android:textSize="18sp"
+      custom:activeBgColor="@color/purple"
+      custom:activeTextColor="@color/white"
+      custom:inactiveBgColor="@color/white"
+      custom:inactiveTextColor="@color/purple"
+      android:layout_marginTop="16dp"
+      android:layout_centerHorizontal="true"
+      custom:textToggleLeft="@string/buy"/>
+
+  <com.github.florent37.materialtextfield.MaterialTextField
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      custom:mtf_labelColor="@color/white"
+      custom:mtf_image="@drawable/dollar_symbol"
+      android:id="@+id/buy_price"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/type_toggle"
+      android:layout_marginTop="10dp"
+      >
+
+    <EditText
+        android:id="@+id/buy_price_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/buy_price"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+  </com.github.florent37.materialtextfield.MaterialTextField>
+
+  <com.github.florent37.materialtextfield.MaterialTextField
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/amount"
+      custom:mtf_labelColor="@color/white"
+      custom:mtf_image="@drawable/ic_plus_symbol"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/buy_price"
+      android:layout_marginTop="10dp"
+      >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount_et"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:hint="@string/label_amount_buy"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+  </com.github.florent37.materialtextfield.MaterialTextField>
+
+  <Button
+      android:id="@+id/confirm"
+      android:layout_width="280dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/amount"
+      android:text="@string/confirm"
+      android:textColor="@color/white"
+      android:backgroundTint="@color/purple"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      />
+
+</RelativeLayout>

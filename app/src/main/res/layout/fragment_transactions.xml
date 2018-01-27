@@ -1,14 +1,70 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     >
 
-  <!-- TODO: Update blank fragment layout -->
-  <TextView
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/fab"
+      >
+
+    <RelativeLayout
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:id="@+id/container"
+        >
+
+      <View
+          android:layout_width="58dp"
+          android:layout_height="58dp"
+          android:layout_centerVertical="true"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_add"
+          android:id="@+id/transparent_view"
+          android:background="@drawable/purple_transparent_circle"
+          />
+
+      <android.support.design.widget.FloatingActionButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fabSize="mini"
+          android:layout_centerInParent="true"
+          android:elevation="0dp"
+          android:src="@drawable/ic_add"
+          app:backgroundTint="@color/purple"
+          />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkerPurple"
+        android:textSize="14sp"
+        android:text="@string/label_add_transaction"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/container"
+        android:layout_toEndOf="@+id/container"
+        fontPath="fonts/Exo2-Bold.ttf"
+        />
+
+  </RelativeLayout>
+
+  <ListView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:text="@string/hello_blank_fragment"
-      />
+      android:paddingBottom="10dp"
+      android:dividerHeight="0dp"
+      android:divider="@null"
+      android:id="@+id/list_view"/>
 
-</FrameLayout>
+</LinearLayout>

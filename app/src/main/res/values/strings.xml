@@ -4,7 +4,7 @@
   <string name="fb_login_protocol_scheme">fb302436203608267</string>
   <string name="facebook_native_ad">302436203608267_309214696263751</string>
   <string name="facebook_native_ad_ico">302436203608267_309312336253987</string>
-  <string name="app_id">ca-app-pub-1103854043360949~3956439037</string>
+  <string name="app_id">ca-app-pub-1347034666805046~2979197389</string>
   <string name="banner_id">ca-app-pub-1103854043360949/2464884659</string>
   <string name="interstitial_id">ca-app-pub-1103854043360949/8825622335</string>
   <string name="coin_added_id">ca-app-pub-1103854043360949/6020986280</string>
@@ -131,4 +131,13 @@
   <string name="label_price_btc_usd">Value</string>
   <string name="message_no_coin">There is no coin in your portfolio, start adding portfolio
   from list below</string>
+  <string name="label_add_transaction">Add New Transaction</string>
+  <string name="label_trading_pair">Trading Pair</string>
+  <string name="label_transaction_price">Transaction Price</string>
+  <string name="label_amount_buy">Amount Bought</string>
+  <string name="label_worth">Worth</string>
+  <string name="sell">Sell</string>
+  <string name="buy">Buy</string>
+  <string name="buy_price">Buy Price</string>
+  <string name="confirm">Confirm</string>
 </resources>

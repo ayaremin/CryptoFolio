@@ -47,9 +47,8 @@ public class MyApp extends MultiDexApplication {
 
     Realm.init(this);
 
-    final RealmConfiguration configuration = new RealmConfiguration.Builder().name("sample.realm").schemaVersion(2).migration(new RealmMigrations()).build();
-    Realm.setDefaultConfiguration(configuration);
-    Realm.getInstance(configuration);
+    Realm.setDefaultConfiguration(new RealmConfiguration.Builder().schemaVersion(3).migration(new
+        RealmMigrations()).build());
 
     CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
         .setFontAttrId(R.attr.fontPath)
